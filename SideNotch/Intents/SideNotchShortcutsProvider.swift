@@ -9,7 +9,7 @@ public struct SideNotchShortcutsProvider: AppShortcutsProvider {
             phrases: [
                 "Toggle \(.applicationName)",
                 "Toggle Side Notch in \(.applicationName)",
-                "Open Side Notch"
+                "Open \(.applicationName)"
             ],
             shortTitle: "Toggle Notch",
             systemImageName: "sidebar.right"
