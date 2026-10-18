@@ -32,10 +32,11 @@ public final class SideNotchPiPManager: NSObject, ObservableObject, AVPictureInP
         }
         
         let pipCallVC = AVPictureInPictureVideoCallViewController()
-        pipCallVC.preferredContentSize = CGSize(width: 68, height: 280) // Slim vertical edge strip
+        pipCallVC.preferredContentSize = CGSize(width: 80, height: 260)
         
-        let hostingController = UIHostingController(rootView: SideLiquidNotchView())
-        hostingController.view.backgroundColor = .clear
+        // Use a dedicated compact vertical strip for PiP window bounds
+        let hostingController = UIHostingController(rootView: SideNotchPiPContentView())
+        hostingController.view.backgroundColor = .black
         hostingController.view.frame = pipCallVC.view.bounds
         hostingController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
@@ -49,7 +50,8 @@ public final class SideNotchPiPManager: NSObject, ObservableObject, AVPictureInP
         )
         
         pipController = AVPictureInPictureController(contentSource: contentSource)
-        pipController?.canStartPictureInPictureAutomaticallyFromInline = true
+        // Set to false so PiP does not automatically hijack the Home screen uninvited
+        pipController?.canStartPictureInPictureAutomaticallyFromInline = false
         pipController?.delegate = self
     }
     
@@ -78,5 +80,20 @@ public final class SideNotchPiPManager: NSObject, ObservableObject, AVPictureInP
     
     public func pictureInPictureControllerDidStopPictureInPicture(_ pictureInPictureController: AVPictureInPictureController) {
         isPiPActive = false
+    }
+}
+
+/// Compact vertical widget tailored specifically for iOS Picture-in-Picture window constraints
+private struct SideNotchPiPContentView: View {
+    @ObservedObject private var stateManager = SideNotchStateManager.shared
+    
+    var body: some View {
+        VStack(spacing: 16) {
+            ForEach(stateManager.metrics) { metric in
+                CircularGaugeItem(metric: metric)
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.black)
     }
 }
