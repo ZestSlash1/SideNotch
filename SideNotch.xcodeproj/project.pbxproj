@@ -8,52 +8,82 @@
 
 /* Begin PBXBuildFile section */
 		110200000000000000000001 /* SideNotchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000001 /* SideNotchApp.swift */; };
-		110200000000000000000002 /* NotchMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000002 /* NotchMetric.swift */; };
-		110200000000000000000003 /* NotchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000003 /* NotchState.swift */; };
-		110200000000000000000004 /* RightBezelLiquidShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000004 /* RightBezelLiquidShape.swift */; };
-		110200000000000000000005 /* CustomMetricGlyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000005 /* CustomMetricGlyph.swift */; };
-		110200000000000000000006 /* CircularGaugeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000006 /* CircularGaugeItem.swift */; };
-		110200000000000000000007 /* ControlPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000007 /* ControlPillButton.swift */; };
-		110200000000000000000008 /* ExpandedBentoOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000008 /* ExpandedBentoOverlay.swift */; };
-		110200000000000000000009 /* SideLiquidNotchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000009 /* SideLiquidNotchView.swift */; };
-		11020000000000000000000A /* WallpaperMockupBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000A /* WallpaperMockupBackground.swift */; };
-		11020000000000000000000B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000B /* ContentView.swift */; };
-		11020000000000000000000C /* SideNotchStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000C /* SideNotchStateManager.swift */; };
-		11020000000000000000000D /* SideNotchPiPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000D /* SideNotchPiPManager.swift */; };
-		11020000000000000000000E /* ToggleNotchIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000E /* ToggleNotchIntent.swift */; };
-		11020000000000000000000F /* SideNotchShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000F /* SideNotchShortcutsProvider.swift */; };
-		110200000000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000010 /* Assets.xcassets */; };
-		110200000000000000000020 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000020 /* AVKit.framework */; };
-		110200000000000000000021 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000021 /* AVFoundation.framework */; };
-		110200000000000000000022 /* Combine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000022 /* Combine.framework */; };
-		110200000000000000000023 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000023 /* SwiftUI.framework */; };
-		110200000000000000000024 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000024 /* AppIntents.framework */; };
+		110200000000000000000002 /* BezelOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000002 /* BezelOrientation.swift */; };
+		110200000000000000000003 /* NotchAppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000003 /* NotchAppItem.swift */; };
+		110200000000000000000004 /* NotchMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000004 /* NotchMetric.swift */; };
+		110200000000000000000005 /* NotchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000005 /* NotchState.swift */; };
+		110200000000000000000006 /* StudioTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000006 /* StudioTheme.swift */; };
+		110200000000000000000007 /* BezelLiquidShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000007 /* BezelLiquidShape.swift */; };
+		110200000000000000000008 /* RightBezelLiquidShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000008 /* RightBezelLiquidShape.swift */; };
+		110200000000000000000009 /* SideNotchHapticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000009 /* SideNotchHapticsEngine.swift */; };
+		11020000000000000000000A /* SideNotchPiPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000A /* SideNotchPiPManager.swift */; };
+		11020000000000000000000B /* SideNotchStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000B /* SideNotchStateManager.swift */; };
+		11020000000000000000000C /* SideNotchStudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000C /* SideNotchStudioManager.swift */; };
+		11020000000000000000000D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000D /* ContentView.swift */; };
+		11020000000000000000000E /* SideLiquidNotchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000E /* SideLiquidNotchView.swift */; };
+		11020000000000000000000F /* WallpaperBackdropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000000F /* WallpaperBackdropView.swift */; };
+		110200000000000000000010 /* WallpaperMockupBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000010 /* WallpaperMockupBackground.swift */; };
+		110200000000000000000011 /* CircularGaugeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000011 /* CircularGaugeItem.swift */; };
+		110200000000000000000012 /* ControlPillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000012 /* ControlPillButton.swift */; };
+		110200000000000000000013 /* CustomMetricGlyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000013 /* CustomMetricGlyph.swift */; };
+		110200000000000000000014 /* QuickActionCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000014 /* QuickActionCapsule.swift */; };
+		110200000000000000000015 /* SpecularRimOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000015 /* SpecularRimOverlay.swift */; };
+		110200000000000000000016 /* UniversalAppGaugeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000016 /* UniversalAppGaugeItem.swift */; };
+		110200000000000000000017 /* ExpandedAppBentoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000017 /* ExpandedAppBentoCard.swift */; };
+		110200000000000000000018 /* ExpandedBentoOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000018 /* ExpandedBentoOverlay.swift */; };
+		110200000000000000000019 /* CustomAppCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110100000000000000000019 /* CustomAppCreatorView.swift */; };
+		11020000000000000000001A /* NotchCalibratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000001A /* NotchCalibratorView.swift */; };
+		11020000000000000000001B /* SideStudioDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000001B /* SideStudioDeckView.swift */; };
+		11020000000000000000001C /* SideNotchShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000001C /* SideNotchShortcutsProvider.swift */; };
+		11020000000000000000001D /* ToggleNotchIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000001D /* ToggleNotchIntent.swift */; };
+		1102000000000000000000A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1101000000000000000000A0 /* Assets.xcassets */; };
+		110200000000000000000F01 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000F01 /* AVKit.framework */; };
+		110200000000000000000F02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000F02 /* AVFoundation.framework */; };
+		110200000000000000000F03 /* Combine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000F03 /* Combine.framework */; };
+		110200000000000000000F04 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000F04 /* SwiftUI.framework */; };
+		110200000000000000000F05 /* AppIntents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000F05 /* AppIntents.framework */; };
+		110200000000000000000F06 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000F06 /* CoreHaptics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		110100000000000000000001 /* SideNotchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchApp.swift; sourceTree = "<group>"; };
-		110100000000000000000002 /* NotchMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchMetric.swift; sourceTree = "<group>"; };
-		110100000000000000000003 /* NotchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchState.swift; sourceTree = "<group>"; };
-		110100000000000000000004 /* RightBezelLiquidShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBezelLiquidShape.swift; sourceTree = "<group>"; };
-		110100000000000000000005 /* CustomMetricGlyph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMetricGlyph.swift; sourceTree = "<group>"; };
-		110100000000000000000006 /* CircularGaugeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularGaugeItem.swift; sourceTree = "<group>"; };
-		110100000000000000000007 /* ControlPillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPillButton.swift; sourceTree = "<group>"; };
-		110100000000000000000008 /* ExpandedBentoOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedBentoOverlay.swift; sourceTree = "<group>"; };
-		110100000000000000000009 /* SideLiquidNotchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideLiquidNotchView.swift; sourceTree = "<group>"; };
-		11010000000000000000000A /* WallpaperMockupBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperMockupBackground.swift; sourceTree = "<group>"; };
-		11010000000000000000000B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		11010000000000000000000C /* SideNotchStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchStateManager.swift; sourceTree = "<group>"; };
-		11010000000000000000000D /* SideNotchPiPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchPiPManager.swift; sourceTree = "<group>"; };
-		11010000000000000000000E /* ToggleNotchIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleNotchIntent.swift; sourceTree = "<group>"; };
-		11010000000000000000000F /* SideNotchShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchShortcutsProvider.swift; sourceTree = "<group>"; };
-		110100000000000000000010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		110100000000000000000011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		110100000000000000000012 /* SideNotch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideNotch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		110100000000000000000020 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		110100000000000000000021 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		110100000000000000000022 /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = System/Library/Frameworks/Combine.framework; sourceTree = SDKROOT; };
-		110100000000000000000023 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		110100000000000000000024 /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = System/Library/Frameworks/AppIntents.framework; sourceTree = SDKROOT; };
+		110100000000000000000002 /* BezelOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelOrientation.swift; sourceTree = "<group>"; };
+		110100000000000000000003 /* NotchAppItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchAppItem.swift; sourceTree = "<group>"; };
+		110100000000000000000004 /* NotchMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchMetric.swift; sourceTree = "<group>"; };
+		110100000000000000000005 /* NotchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchState.swift; sourceTree = "<group>"; };
+		110100000000000000000006 /* StudioTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioTheme.swift; sourceTree = "<group>"; };
+		110100000000000000000007 /* BezelLiquidShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezelLiquidShape.swift; sourceTree = "<group>"; };
+		110100000000000000000008 /* RightBezelLiquidShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBezelLiquidShape.swift; sourceTree = "<group>"; };
+		110100000000000000000009 /* SideNotchHapticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchHapticsEngine.swift; sourceTree = "<group>"; };
+		11010000000000000000000A /* SideNotchPiPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchPiPManager.swift; sourceTree = "<group>"; };
+		11010000000000000000000B /* SideNotchStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchStateManager.swift; sourceTree = "<group>"; };
+		11010000000000000000000C /* SideNotchStudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchStudioManager.swift; sourceTree = "<group>"; };
+		11010000000000000000000D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		11010000000000000000000E /* SideLiquidNotchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideLiquidNotchView.swift; sourceTree = "<group>"; };
+		11010000000000000000000F /* WallpaperBackdropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperBackdropView.swift; sourceTree = "<group>"; };
+		110100000000000000000010 /* WallpaperMockupBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperMockupBackground.swift; sourceTree = "<group>"; };
+		110100000000000000000011 /* CircularGaugeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularGaugeItem.swift; sourceTree = "<group>"; };
+		110100000000000000000012 /* ControlPillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPillButton.swift; sourceTree = "<group>"; };
+		110100000000000000000013 /* CustomMetricGlyph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMetricGlyph.swift; sourceTree = "<group>"; };
+		110100000000000000000014 /* QuickActionCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionCapsule.swift; sourceTree = "<group>"; };
+		110100000000000000000015 /* SpecularRimOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecularRimOverlay.swift; sourceTree = "<group>"; };
+		110100000000000000000016 /* UniversalAppGaugeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAppGaugeItem.swift; sourceTree = "<group>"; };
+		110100000000000000000017 /* ExpandedAppBentoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedAppBentoCard.swift; sourceTree = "<group>"; };
+		110100000000000000000018 /* ExpandedBentoOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedBentoOverlay.swift; sourceTree = "<group>"; };
+		110100000000000000000019 /* CustomAppCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAppCreatorView.swift; sourceTree = "<group>"; };
+		11010000000000000000001A /* NotchCalibratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchCalibratorView.swift; sourceTree = "<group>"; };
+		11010000000000000000001B /* SideStudioDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideStudioDeckView.swift; sourceTree = "<group>"; };
+		11010000000000000000001C /* SideNotchShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchShortcutsProvider.swift; sourceTree = "<group>"; };
+		11010000000000000000001D /* ToggleNotchIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleNotchIntent.swift; sourceTree = "<group>"; };
+		1101000000000000000000A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1101000000000000000000A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1101000000000000000000A2 /* SideNotch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideNotch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		110100000000000000000F01 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		110100000000000000000F02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		110100000000000000000F03 /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = System/Library/Frameworks/Combine.framework; sourceTree = SDKROOT; };
+		110100000000000000000F04 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		110100000000000000000F05 /* AppIntents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppIntents.framework; path = System/Library/Frameworks/AppIntents.framework; sourceTree = SDKROOT; };
+		110100000000000000000F06 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = System/Library/Frameworks/CoreHaptics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,41 +91,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				110200000000000000000020 /* AVKit.framework in Frameworks */,
-				110200000000000000000021 /* AVFoundation.framework in Frameworks */,
-				110200000000000000000022 /* Combine.framework in Frameworks */,
-				110200000000000000000023 /* SwiftUI.framework in Frameworks */,
-				110200000000000000000024 /* AppIntents.framework in Frameworks */,
+				110200000000000000000F01 /* AVKit.framework in Frameworks */,
+				110200000000000000000F02 /* AVFoundation.framework in Frameworks */,
+				110200000000000000000F03 /* Combine.framework in Frameworks */,
+				110200000000000000000F04 /* SwiftUI.framework in Frameworks */,
+				110200000000000000000F05 /* AppIntents.framework in Frameworks */,
+				110200000000000000000F06 /* CoreHaptics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		110300000000000000000001 = {
+		1103000000000000000000C1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				110300000000000000000002 /* SideNotch */,
-				11030000000000000000000C /* Frameworks */,
-				11030000000000000000000D /* Products */,
+				110100000000000000000011 /* CircularGaugeItem.swift */,
+				110100000000000000000012 /* ControlPillButton.swift */,
+				110100000000000000000013 /* CustomMetricGlyph.swift */,
+				110100000000000000000014 /* QuickActionCapsule.swift */,
+				110100000000000000000015 /* SpecularRimOverlay.swift */,
+				110100000000000000000016 /* UniversalAppGaugeItem.swift */,
 			);
+			path = Components;
 			sourceTree = "<group>";
 		};
-		110300000000000000000002 /* SideNotch */ = {
+		1103000000000000000000C2 /* Overlays */ = {
 			isa = PBXGroup;
 			children = (
-				110300000000000000000003 /* App */,
-				110300000000000000000004 /* Models */,
-				110300000000000000000005 /* Shapes */,
-				110300000000000000000006 /* Views */,
-				110300000000000000000009 /* Managers */,
-				11030000000000000000000A /* Intents */,
-				11030000000000000000000B /* Resources */,
+				110100000000000000000017 /* ExpandedAppBentoCard.swift */,
+				110100000000000000000018 /* ExpandedBentoOverlay.swift */,
 			);
-			path = SideNotch;
+			path = Overlays;
 			sourceTree = "<group>";
 		};
-		110300000000000000000003 /* App */ = {
+		1103000000000000000000C3 /* Studio */ = {
+			isa = PBXGroup;
+			children = (
+				110100000000000000000019 /* CustomAppCreatorView.swift */,
+				11010000000000000000001A /* NotchCalibratorView.swift */,
+				11010000000000000000001B /* SideStudioDeckView.swift */,
+			);
+			path = Studio;
+			sourceTree = "<group>";
+		};
+		110300000000000000000011 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				110100000000000000000001 /* SideNotchApp.swift */,
@@ -103,98 +143,120 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		110300000000000000000004 /* Models */ = {
+		110300000000000000000012 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				110100000000000000000002 /* NotchMetric.swift */,
-				110100000000000000000003 /* NotchState.swift */,
+				110100000000000000000002 /* BezelOrientation.swift */,
+				110100000000000000000003 /* NotchAppItem.swift */,
+				110100000000000000000004 /* NotchMetric.swift */,
+				110100000000000000000005 /* NotchState.swift */,
+				110100000000000000000006 /* StudioTheme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		110300000000000000000005 /* Shapes */ = {
+		110300000000000000000013 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				110100000000000000000004 /* RightBezelLiquidShape.swift */,
+				110100000000000000000007 /* BezelLiquidShape.swift */,
+				110100000000000000000008 /* RightBezelLiquidShape.swift */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
 		};
-		110300000000000000000006 /* Views */ = {
+		110300000000000000000014 /* Haptics */ = {
 			isa = PBXGroup;
 			children = (
-				110300000000000000000007 /* Components */,
-				110300000000000000000008 /* Overlays */,
-				110100000000000000000009 /* SideLiquidNotchView.swift */,
-				11010000000000000000000A /* WallpaperMockupBackground.swift */,
-				11010000000000000000000B /* ContentView.swift */,
+				110100000000000000000009 /* SideNotchHapticsEngine.swift */,
 			);
-			path = Views;
+			path = Haptics;
 			sourceTree = "<group>";
 		};
-		110300000000000000000007 /* Components */ = {
+		110300000000000000000015 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				110100000000000000000005 /* CustomMetricGlyph.swift */,
-				110100000000000000000006 /* CircularGaugeItem.swift */,
-				110100000000000000000007 /* ControlPillButton.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		110300000000000000000008 /* Overlays */ = {
-			isa = PBXGroup;
-			children = (
-				110100000000000000000008 /* ExpandedBentoOverlay.swift */,
-			);
-			path = Overlays;
-			sourceTree = "<group>";
-		};
-		110300000000000000000009 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				11010000000000000000000C /* SideNotchStateManager.swift */,
-				11010000000000000000000D /* SideNotchPiPManager.swift */,
+				11010000000000000000000A /* SideNotchPiPManager.swift */,
+				11010000000000000000000B /* SideNotchStateManager.swift */,
+				11010000000000000000000C /* SideNotchStudioManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		11030000000000000000000A /* Intents */ = {
+		110300000000000000000016 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				11010000000000000000000E /* ToggleNotchIntent.swift */,
-				11010000000000000000000F /* SideNotchShortcutsProvider.swift */,
+				1103000000000000000000C1 /* Components */,
+				1103000000000000000000C2 /* Overlays */,
+				1103000000000000000000C3 /* Studio */,
+				11010000000000000000000D /* ContentView.swift */,
+				11010000000000000000000E /* SideLiquidNotchView.swift */,
+				11010000000000000000000F /* WallpaperBackdropView.swift */,
+				110100000000000000000010 /* WallpaperMockupBackground.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		110300000000000000000017 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				11010000000000000000001C /* SideNotchShortcutsProvider.swift */,
+				11010000000000000000001D /* ToggleNotchIntent.swift */,
 			);
 			path = Intents;
 			sourceTree = "<group>";
 		};
-		11030000000000000000000B /* Resources */ = {
+		110300000000000000000018 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				110100000000000000000010 /* Assets.xcassets */,
-				110100000000000000000011 /* Info.plist */,
+				1101000000000000000000A0 /* Assets.xcassets */,
+				1101000000000000000000A1 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		11030000000000000000000C /* Frameworks */ = {
+		110300000000000000000019 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				110100000000000000000020 /* AVKit.framework */,
-				110100000000000000000021 /* AVFoundation.framework */,
-				110100000000000000000022 /* Combine.framework */,
-				110100000000000000000023 /* SwiftUI.framework */,
-				110100000000000000000024 /* AppIntents.framework */,
+				110100000000000000000F01 /* AVKit.framework */,
+				110100000000000000000F02 /* AVFoundation.framework */,
+				110100000000000000000F03 /* Combine.framework */,
+				110100000000000000000F04 /* SwiftUI.framework */,
+				110100000000000000000F05 /* AppIntents.framework */,
+				110100000000000000000F06 /* CoreHaptics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		11030000000000000000000D /* Products */ = {
+		11030000000000000000001A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				110100000000000000000012 /* SideNotch.app */,
+				1101000000000000000000A2 /* SideNotch.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		110300000000000000000001 /* SideNotch */ = {
+			isa = PBXGroup;
+			children = (
+				110300000000000000000011 /* App */,
+				110300000000000000000012 /* Models */,
+				110300000000000000000013 /* Shapes */,
+				110300000000000000000014 /* Haptics */,
+				110300000000000000000015 /* Managers */,
+				110300000000000000000016 /* Views */,
+				110300000000000000000017 /* Intents */,
+				110300000000000000000018 /* Resources */,
+			);
+			path = SideNotch;
+			sourceTree = "<group>";
+		};
+		110300000000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				110300000000000000000001 /* SideNotch */,
+				110300000000000000000019 /* Frameworks */,
+				11030000000000000000001A /* Products */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +264,7 @@
 /* Begin PBXNativeTarget section */
 		110500000000000000000001 /* SideNotch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 110700000000000000000004 /* Build configuration list for PBXNativeTarget "SideNotch" */;
+			buildConfigurationList = 110600000000000000000002 /* Build configuration list for PBXNativeTarget "SideNotch" */;
 			buildPhases = (
 				110400000000000000000001 /* Sources */,
 				110400000000000000000002 /* Frameworks */,
@@ -214,24 +276,25 @@
 			);
 			name = SideNotch;
 			productName = SideNotch;
-			productReference = 110100000000000000000012 /* SideNotch.app */;
+			productReference = 1101000000000000000000A2 /* SideNotch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		110600000000000000000001 /* Project object */ = {
+		110700000000000000000001 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1540;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					110500000000000000000001 = {
-						CreatedOnToolsVersion = 15.4;
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = 110700000000000000000001 /* Build configuration list for PBXProject "SideNotch" */;
+			buildConfigurationList = 110600000000000000000001 /* Build configuration list for PBXProject "SideNotch" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -239,8 +302,8 @@
 				en,
 				Base,
 			);
-			mainGroup = 110300000000000000000001;
-			productRefGroup = 11030000000000000000000D /* Products */;
+			mainGroup = 110300000000000000000000;
+			productRefGroup = 11030000000000000000001A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -254,7 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				110200000000000000000010 /* Assets.xcassets in Resources */,
+				1102000000000000000000A0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,65 +329,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				110200000000000000000001 /* SideNotchApp.swift in Sources */,
-				110200000000000000000002 /* NotchMetric.swift in Sources */,
-				110200000000000000000003 /* NotchState.swift in Sources */,
-				110200000000000000000004 /* RightBezelLiquidShape.swift in Sources */,
-				110200000000000000000005 /* CustomMetricGlyph.swift in Sources */,
-				110200000000000000000006 /* CircularGaugeItem.swift in Sources */,
-				110200000000000000000007 /* ControlPillButton.swift in Sources */,
-				110200000000000000000008 /* ExpandedBentoOverlay.swift in Sources */,
-				110200000000000000000009 /* SideLiquidNotchView.swift in Sources */,
-				11020000000000000000000A /* WallpaperMockupBackground.swift in Sources */,
-				11020000000000000000000B /* ContentView.swift in Sources */,
-				11020000000000000000000C /* SideNotchStateManager.swift in Sources */,
-				11020000000000000000000D /* SideNotchPiPManager.swift in Sources */,
-				11020000000000000000000E /* ToggleNotchIntent.swift in Sources */,
-				11020000000000000000000F /* SideNotchShortcutsProvider.swift in Sources */,
+				110200000000000000000002 /* BezelOrientation.swift in Sources */,
+				110200000000000000000003 /* NotchAppItem.swift in Sources */,
+				110200000000000000000004 /* NotchMetric.swift in Sources */,
+				110200000000000000000005 /* NotchState.swift in Sources */,
+				110200000000000000000006 /* StudioTheme.swift in Sources */,
+				110200000000000000000007 /* BezelLiquidShape.swift in Sources */,
+				110200000000000000000008 /* RightBezelLiquidShape.swift in Sources */,
+				110200000000000000000009 /* SideNotchHapticsEngine.swift in Sources */,
+				11020000000000000000000A /* SideNotchPiPManager.swift in Sources */,
+				11020000000000000000000B /* SideNotchStateManager.swift in Sources */,
+				11020000000000000000000C /* SideNotchStudioManager.swift in Sources */,
+				11020000000000000000000D /* ContentView.swift in Sources */,
+				11020000000000000000000E /* SideLiquidNotchView.swift in Sources */,
+				11020000000000000000000F /* WallpaperBackdropView.swift in Sources */,
+				110200000000000000000010 /* WallpaperMockupBackground.swift in Sources */,
+				110200000000000000000011 /* CircularGaugeItem.swift in Sources */,
+				110200000000000000000012 /* ControlPillButton.swift in Sources */,
+				110200000000000000000013 /* CustomMetricGlyph.swift in Sources */,
+				110200000000000000000014 /* QuickActionCapsule.swift in Sources */,
+				110200000000000000000015 /* SpecularRimOverlay.swift in Sources */,
+				110200000000000000000016 /* UniversalAppGaugeItem.swift in Sources */,
+				110200000000000000000017 /* ExpandedAppBentoCard.swift in Sources */,
+				110200000000000000000018 /* ExpandedBentoOverlay.swift in Sources */,
+				110200000000000000000019 /* CustomAppCreatorView.swift in Sources */,
+				11020000000000000000001A /* NotchCalibratorView.swift in Sources */,
+				11020000000000000000001B /* SideStudioDeckView.swift in Sources */,
+				11020000000000000000001C /* SideNotchShortcutsProvider.swift in Sources */,
+				11020000000000000000001D /* ToggleNotchIntent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		110700000000000000000002 /* Debug */ = {
+		110800000000000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -332,87 +382,44 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDEFINED_VARIABLES = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.9;
 			};
 			name = Debug;
 		};
-		110700000000000000000003 /* Release */ = {
+		110800000000000000000002 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDEFINED_VARIABLES = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = "wholemodule";
-				SWIFT_VERSION = 5.9;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		110700000000000000000005 /* Debug */ = {
+		110800000000000000000003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_KEY_UIBackgroundModes = NO;
 				INFOPLIST_FILE = SideNotch/Resources/Info.plist;
@@ -423,21 +430,20 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sidenotch.app;
-				PRODUCT_NAME = SideNotch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.9;
 				TARGETED_DEVICE_FAMILY = "1";
 			};
 			name = Debug;
 		};
-		110700000000000000000006 /* Release */ = {
+		110800000000000000000004 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_KEY_UIBackgroundModes = NO;
 				INFOPLIST_FILE = SideNotch/Resources/Info.plist;
@@ -448,7 +454,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sidenotch.app;
-				PRODUCT_NAME = SideNotch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.9;
 				TARGETED_DEVICE_FAMILY = "1";
@@ -458,20 +464,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		110700000000000000000001 /* Build configuration list for PBXProject "SideNotch" */ = {
+		110600000000000000000001 /* Build configuration list for PBXProject "SideNotch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				110700000000000000000002 /* Debug */,
-				110700000000000000000003 /* Release */,
+				110800000000000000000001 /* Debug */,
+				110800000000000000000002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		110700000000000000000004 /* Build configuration list for PBXNativeTarget "SideNotch" */ = {
+		110600000000000000000002 /* Build configuration list for PBXNativeTarget "SideNotch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				110700000000000000000005 /* Debug */,
-				110700000000000000000006 /* Release */,
+				110800000000000000000003 /* Debug */,
+				110800000000000000000004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -479,5 +485,5 @@
 /* End XCConfigurationList section */
 
 	};
-	rootObject = 110600000000000000000001 /* Project object */;
+	rootObject = 110700000000000000000001 /* Project object */;
 }

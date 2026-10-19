@@ -2,36 +2,26 @@ import SwiftUI
 import UIKit
 
 public struct ContentView: View {
+    @ObservedObject private var studioManager = SideNotchStudioManager.shared
+    
     public init() {}
     
     public var body: some View {
         ZStack {
-            WallpaperMockupBackground()
+            // 1. Dynamic Wallpaper Backdrop
+            WallpaperBackdropView()
+            
+            // 2. Hardware Bezel Notch
             SideLiquidNotchView()
             
-            // Background PiP anchor source view
-            PiPAnchorView { sourceView in
-                SideNotchPiPManager.shared.setupPiP(with: sourceView)
+            // 3. Floating Side Studio Command Deck
+            VStack {
+                Spacer()
+                SideStudioDeckView()
+                    .padding(.bottom, 20)
             }
-            .frame(width: 1, height: 1)
-            .opacity(0.01)
-            .allowsHitTesting(false)
         }
-        .ignoresSafeArea()
+        .ignoresSafeArea(.keyboard)
+        .preferredColorScheme(.dark)
     }
-}
-
-private struct PiPAnchorView: UIViewRepresentable {
-    let onSetup: (UIView) -> Void
-    
-    func makeUIView(context: Context) -> UIView {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
-        view.backgroundColor = .clear
-        DispatchQueue.main.async {
-            onSetup(view)
-        }
-        return view
-    }
-    
-    func updateUIView(_ uiView: UIView, context: Context) {}
 }
