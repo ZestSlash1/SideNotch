@@ -36,6 +36,8 @@
 		11020000000000000000001B /* SideStudioDeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000001B /* SideStudioDeckView.swift */; };
 		11020000000000000000001C /* SideNotchShortcutsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000001C /* SideNotchShortcutsProvider.swift */; };
 		11020000000000000000001D /* ToggleNotchIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000001D /* ToggleNotchIntent.swift */; };
+		11020000000000000000001E /* SideNotchSnippetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000001E /* SideNotchSnippetView.swift */; };
+		11020000000000000000001F /* ActionButtonGuideSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010000000000000000001F /* ActionButtonGuideSheet.swift */; };
 		1102000000000000000000A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1101000000000000000000A0 /* Assets.xcassets */; };
 		110200000000000000000F01 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000F01 /* AVKit.framework */; };
 		110200000000000000000F02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110100000000000000000F02 /* AVFoundation.framework */; };
@@ -75,6 +77,8 @@
 		11010000000000000000001B /* SideStudioDeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideStudioDeckView.swift; sourceTree = "<group>"; };
 		11010000000000000000001C /* SideNotchShortcutsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchShortcutsProvider.swift; sourceTree = "<group>"; };
 		11010000000000000000001D /* ToggleNotchIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleNotchIntent.swift; sourceTree = "<group>"; };
+		11010000000000000000001E /* SideNotchSnippetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNotchSnippetView.swift; sourceTree = "<group>"; };
+		11010000000000000000001F /* ActionButtonGuideSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonGuideSheet.swift; sourceTree = "<group>"; };
 		1101000000000000000000A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1101000000000000000000A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1101000000000000000000A2 /* SideNotch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideNotch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +125,7 @@
 			children = (
 				110100000000000000000017 /* ExpandedAppBentoCard.swift */,
 				110100000000000000000018 /* ExpandedBentoOverlay.swift */,
+				11010000000000000000001E /* SideNotchSnippetView.swift */,
 			);
 			path = Overlays;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				110100000000000000000019 /* CustomAppCreatorView.swift */,
 				11010000000000000000001A /* NotchCalibratorView.swift */,
 				11010000000000000000001B /* SideStudioDeckView.swift */,
+				11010000000000000000001F /* ActionButtonGuideSheet.swift */,
 			);
 			path = Studio;
 			sourceTree = "<group>";
@@ -357,6 +363,8 @@
 				11020000000000000000001B /* SideStudioDeckView.swift in Sources */,
 				11020000000000000000001C /* SideNotchShortcutsProvider.swift in Sources */,
 				11020000000000000000001D /* ToggleNotchIntent.swift in Sources */,
+				11020000000000000000001E /* SideNotchSnippetView.swift in Sources */,
+				11020000000000000000001F /* ActionButtonGuideSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

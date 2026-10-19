@@ -4,6 +4,7 @@ public struct SideStudioDeckView: View {
     @ObservedObject private var studioManager = SideNotchStudioManager.shared
     @State private var showingCreatorSheet: Bool = false
     @State private var showingCalibratorSheet: Bool = false
+    @State private var showingActionButtonSheet: Bool = false
     
     public init() {}
     
@@ -62,8 +63,8 @@ public struct SideStudioDeckView: View {
                 .padding(.horizontal, 16)
             }
             
-            // Bottom Action Deck: Quick Test Controls + Hardware Calibrate Button
-            HStack(spacing: 10) {
+            // Bottom Action Deck: Quick Test Controls + Hardware Action Button + Calibrate
+            HStack(spacing: 8) {
                 Button {
                     withAnimation(.spring(response: 0.35, dampingFraction: 0.72)) {
                         studioManager.state = (studioManager.state == .dormant) ? .glance : .dormant
@@ -77,7 +78,7 @@ public struct SideStudioDeckView: View {
                     }
                     .font(.system(size: 11, weight: .semibold, design: .rounded))
                     .foregroundStyle(.white)
-                    .padding(.horizontal, 12)
+                    .padding(.horizontal, 10)
                     .padding(.vertical, 9)
                     .background(Capsule().fill(Color.white.opacity(0.12)))
                 }
@@ -87,28 +88,49 @@ public struct SideStudioDeckView: View {
                 } label: {
                     HStack(spacing: 4) {
                         Image(systemName: "gearshape.fill")
-                        Text(studioManager.state == .detachedGear ? "Snap Gear" : "Pop Gear")
+                        Text(studioManager.state == .detachedGear ? "Snap" : "Pop")
                     }
                     .font(.system(size: 11, weight: .semibold, design: .rounded))
                     .foregroundStyle(.white)
-                    .padding(.horizontal, 12)
+                    .padding(.horizontal, 10)
                     .padding(.vertical, 9)
                     .background(Capsule().fill(Color.white.opacity(0.12)))
                 }
                 
                 Spacer()
                 
+                // Hardware Action Button Quick Config
+                Button {
+                    SideNotchHapticsEngine.shared.playSelectionTick()
+                    showingActionButtonSheet = true
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: "button.programmable")
+                            .font(.system(size: 11, weight: .bold))
+                        Text("Action Button")
+                    }
+                    .font(.system(size: 11, weight: .bold, design: .rounded))
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 11)
+                    .padding(.vertical, 9)
+                    .background(
+                        Capsule()
+                            .fill(LinearGradient(colors: [.orange, .red], startPoint: .leading, endPoint: .trailing))
+                    )
+                    .shadow(color: .orange.opacity(0.35), radius: 5, x: 0, y: 2)
+                }
+                
                 Button {
                     SideNotchHapticsEngine.shared.playSelectionTick()
                     showingCalibratorSheet = true
                 } label: {
-                    HStack(spacing: 5) {
+                    HStack(spacing: 4) {
                         Image(systemName: "slider.horizontal.3")
                         Text("Calibrate")
                     }
                     .font(.system(size: 11, weight: .bold, design: .rounded))
                     .foregroundStyle(.white)
-                    .padding(.horizontal, 14)
+                    .padding(.horizontal, 11)
                     .padding(.vertical, 9)
                     .background(
                         Capsule()
@@ -136,6 +158,9 @@ public struct SideStudioDeckView: View {
         }
         .sheet(isPresented: $showingCalibratorSheet) {
             NotchCalibratorView()
+        }
+        .sheet(isPresented: $showingActionButtonSheet) {
+            ActionButtonGuideSheet()
         }
     }
 }
