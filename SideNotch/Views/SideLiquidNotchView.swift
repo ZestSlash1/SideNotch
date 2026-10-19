@@ -74,7 +74,7 @@ public struct SideLiquidNotchView: View {
                         filletRadius: 18
                     )
                     .frame(width: pillW, height: pillH)
-                    .offset(x: isRight ? (140 - pillW) : 0)
+                    .offset(x: pillX)
                     .opacity(0.85)
                     
                     // LAYER B: Crisp Foreground Micro-Widgets (App Rings & Icons)

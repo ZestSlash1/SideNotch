@@ -74,12 +74,16 @@ public final class SideNotchPiPManager: NSObject, ObservableObject, AVPictureInP
     
     // MARK: - AVPictureInPictureControllerDelegate
     
-    public func pictureInPictureControllerDidStartPictureInPicture(_ pictureInPictureController: AVPictureInPictureController) {
-        isPiPActive = true
+    nonisolated public func pictureInPictureControllerDidStartPictureInPicture(_ pictureInPictureController: AVPictureInPictureController) {
+        Task { @MainActor in
+            self.isPiPActive = true
+        }
     }
     
-    public func pictureInPictureControllerDidStopPictureInPicture(_ pictureInPictureController: AVPictureInPictureController) {
-        isPiPActive = false
+    nonisolated public func pictureInPictureControllerDidStopPictureInPicture(_ pictureInPictureController: AVPictureInPictureController) {
+        Task { @MainActor in
+            self.isPiPActive = false
+        }
     }
 }
 
