@@ -39,7 +39,7 @@ public struct ActionButtonGuideSheet: View {
                     }
                     .padding(.top, 10)
                     
-                    // Card 1: iPhone 15 Pro / 16 / 16 Pro Setup
+                    // Card 1: iPhone 15 Pro / 16 / 16 Pro Action Button
                     VStack(alignment: .leading, spacing: 14) {
                         HStack(spacing: 8) {
                             Image(systemName: "iphone.gen3")
@@ -53,7 +53,7 @@ public struct ActionButtonGuideSheet: View {
                             StepInstructionRow(number: "1", text: "Open iPhone **Settings** app.")
                             StepInstructionRow(number: "2", text: "Scroll down and tap **Action Button**.")
                             StepInstructionRow(number: "3", text: "Swipe across until you reach **Shortcut**.")
-                            StepInstructionRow(number: "4", text: "Tap the selector, choose **SideNotch**, and select **Toggle Notch** (opens app) or **Peek Notch** (telemetry pill).")
+                            StepInstructionRow(number: "4", text: "Tap the selector, choose **SideNotch**, and select **Toggle Notch**.")
                         }
                     }
                     .padding(16)
@@ -66,7 +66,34 @@ public struct ActionButtonGuideSheet: View {
                             .stroke(Color.white.opacity(0.12), lineWidth: 0.8)
                     )
                     
-                    // Card 2: Back Tap Alternative (For any iPhone)
+                    // Card 2: Custom Shortcut (Instant Direct Launch)
+                    VStack(alignment: .leading, spacing: 14) {
+                        HStack(spacing: 8) {
+                            Image(systemName: "square.stack.3d.up.fill")
+                                .foregroundStyle(Color.purple)
+                            Text("Creating Shortcut in Shortcuts App")
+                                .font(.system(size: 15, weight: .bold, design: .rounded))
+                                .foregroundStyle(.white)
+                        }
+                        
+                        VStack(alignment: .leading, spacing: 10) {
+                            StepInstructionRow(number: "1", text: "Open Apple's **Shortcuts** app on your phone.")
+                            StepInstructionRow(number: "2", text: "Tap **+** in the top right to create a new shortcut.")
+                            StepInstructionRow(number: "3", text: "Tap **Add Action** → search **Open App** → pick **SideNotch** (or choose **SideNotch → Toggle Side Notch**).")
+                            StepInstructionRow(number: "4", text: "Save the shortcut. You can now assign this directly to the Action Button or Home Screen!")
+                        }
+                    }
+                    .padding(16)
+                    .background(
+                        RoundedRectangle(cornerRadius: 18, style: .continuous)
+                            .fill(Color.white.opacity(0.06))
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 18, style: .continuous)
+                            .stroke(Color.white.opacity(0.12), lineWidth: 0.8)
+                    )
+                    
+                    // Card 3: Back Tap Alternative (For any iPhone)
                     VStack(alignment: .leading, spacing: 14) {
                         HStack(spacing: 8) {
                             Image(systemName: "hand.tap.fill")
@@ -80,7 +107,7 @@ public struct ActionButtonGuideSheet: View {
                             StepInstructionRow(number: "1", text: "Open **Settings** → **Accessibility** → **Touch**.")
                             StepInstructionRow(number: "2", text: "Scroll to bottom and tap **Back Tap**.")
                             StepInstructionRow(number: "3", text: "Choose **Double Tap** or **Triple Tap**.")
-                            StepInstructionRow(number: "4", text: "Scroll to Shortcuts section and select **Toggle Notch**.")
+                            StepInstructionRow(number: "4", text: "Scroll to Shortcuts section and select **SideNotch** or your shortcut.")
                         }
                     }
                     .padding(16)

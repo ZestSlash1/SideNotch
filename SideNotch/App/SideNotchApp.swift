@@ -1,8 +1,11 @@
 import SwiftUI
+import AppIntents
 
 @main
 public struct SideNotchApp: App {
-    public init() {}
+    public init() {
+        SideNotchShortcutsProvider.updateAppShortcutParameters()
+    }
     
     public var body: some Scene {
         WindowGroup {

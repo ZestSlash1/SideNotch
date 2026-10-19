@@ -95,7 +95,7 @@ public struct SideNotchSnippetView: View {
                 
                 Spacer()
                 
-                Link(destination: URL(string: "sidenotch://open")!) {
+                Button(intent: OpenSideNotchIntent()) {
                     HStack(spacing: 4) {
                         Text("Open Notch")
                             .font(.system(size: 11, weight: .bold, design: .rounded))
@@ -104,6 +104,7 @@ public struct SideNotchSnippetView: View {
                     }
                     .foregroundStyle(Color.cyan)
                 }
+                .buttonStyle(.plain)
             }
         }
         .padding(16)

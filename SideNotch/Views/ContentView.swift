@@ -3,6 +3,7 @@ import UIKit
 
 public struct ContentView: View {
     @ObservedObject private var studioManager = SideNotchStudioManager.shared
+    @Environment(\.scenePhase) private var scenePhase
     
     public init() {}
     
@@ -23,5 +24,14 @@ public struct ContentView: View {
         }
         .ignoresSafeArea(.keyboard)
         .preferredColorScheme(.dark)
+        .onChange(of: scenePhase) { _, newPhase in
+            if newPhase == .active {
+                withAnimation(.spring(response: 0.35, dampingFraction: 0.72)) {
+                    studioManager.state = .glance
+                    studioManager.gearSeparation = 0
+                }
+                SideNotchHapticsEngine.shared.playDockingSnap()
+            }
+        }
     }
 }

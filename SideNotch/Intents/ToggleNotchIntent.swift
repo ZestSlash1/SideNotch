@@ -5,16 +5,34 @@ import SwiftUI
 /// When triggered, it activates Side Notch and immediately presents it to the user.
 public struct ToggleNotchIntent: AppIntent {
     public static var title: LocalizedStringResource = "Toggle Side Notch"
-    public static var description = IntentDescription("Activates and toggles the interactive Side Notch on screen.")
+    public static var description = IntentDescription("Activates and reveals the interactive Side Notch on screen.")
     public static var openAppWhenRun: Bool = true
     
     public init() {}
     
     @MainActor
-    public func perform() async throws -> some IntentResult & ProvidesDialog {
-        SideNotchStudioManager.shared.toggleNotch()
+    public func perform() async throws -> some IntentResult {
+        SideNotchStudioManager.shared.state = .glance
+        SideNotchStudioManager.shared.gearSeparation = 0
         SideNotchHapticsEngine.shared.playDockingSnap()
-        return .result(dialog: "Side Notch Active")
+        return .result()
+    }
+}
+
+/// Explicit open intent for opening Side Notch directly into glance mode.
+public struct OpenSideNotchIntent: AppIntent {
+    public static var title: LocalizedStringResource = "Open Side Notch"
+    public static var description = IntentDescription("Launches Side Notch directly in glance mode with hardware haptics.")
+    public static var openAppWhenRun: Bool = true
+    
+    public init() {}
+    
+    @MainActor
+    public func perform() async throws -> some IntentResult {
+        SideNotchStudioManager.shared.state = .glance
+        SideNotchStudioManager.shared.gearSeparation = 0
+        SideNotchHapticsEngine.shared.playDockingSnap()
+        return .result()
     }
 }
 
@@ -45,22 +63,5 @@ public struct PeekSideNotchIntent: AppIntent {
             dialog: IntentDialog(stringLiteral: summary),
             view: SideNotchSnippetView(apps: activeApps)
         )
-    }
-}
-
-/// Explicit open intent for opening Side Notch directly into glance mode.
-public struct OpenSideNotchIntent: AppIntent {
-    public static var title: LocalizedStringResource = "Open Side Notch"
-    public static var description = IntentDescription("Launches Side Notch directly in glance mode with hardware haptics.")
-    public static var openAppWhenRun: Bool = true
-    
-    public init() {}
-    
-    @MainActor
-    public func perform() async throws -> some IntentResult {
-        SideNotchStudioManager.shared.state = .glance
-        SideNotchStudioManager.shared.gearSeparation = 0
-        SideNotchHapticsEngine.shared.playDockingSnap()
-        return .result()
     }
 }
